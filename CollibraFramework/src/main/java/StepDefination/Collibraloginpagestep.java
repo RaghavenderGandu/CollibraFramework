@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 
 public class Collibraloginpagestep extends TestBase
 {
-	CollibraLoginPage loginc = new CollibraLoginPage();
+	CollibraLoginPage login ;
 
 	@Given("^i want to navigate to collibra login page$")
 	public void i_want_to_navigate_to_collibra_login_page()
@@ -23,7 +23,8 @@ public class Collibraloginpagestep extends TestBase
 	public void enter_valid_username_and_password() 
 	{
 		
-	loginc.login(prop.getProperty("LoginUsername"), prop.getProperty("LoginPassword"));
+		login=new CollibraLoginPage();
+	login.login(prop.getProperty("LoginUsername"), prop.getProperty("LoginPassword"));
 		
 	}
 

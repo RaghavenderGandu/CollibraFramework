@@ -20,7 +20,7 @@ public class CollibraLoginPage extends TestBase
 	@FindBy(how=How.XPATH, using = "//button[@class='uf-normal-button uf-button-accent uf-button uf-submit-button enabled']")
 	WebElement Signin;
 
-	public Object collibraLoginPage;
+	 
 	
 	//Initializing the page object :
 	
@@ -39,6 +39,7 @@ public class CollibraLoginPage extends TestBase
 	
 	public CollibraLoginPage login(String login , String pass)
 	{
+		
 		loginName.sendKeys(login);
 		Password.sendKeys(pass);
 		Signin.click();
