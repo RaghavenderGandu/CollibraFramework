@@ -1,0 +1,4 @@
+browser= chrome
+url = https://jpmc-56.collibra.com/signin
+LoginUsername=D001 
+LoginPassword=password
